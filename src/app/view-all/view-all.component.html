@@ -7,15 +7,16 @@
                 </div>
                 <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3" *ngFor ="let i of data">
                     <div class="card">
-                        <img src="{{i.image}}" class="card-img-top" alt="...">
+                        <img height="300px" src="{{i.image}}" class="card-img-top" alt="...">
                         <div class="card-body">
-                          <h5 class="card-title">{{i.title}}</h5>
+                          <h5 class="card-title text-center">{{i.id}}</h5>
+                          <h5 class="card-title text-center">{{i.title}}</h5>
                           <p class="card-text">{{i.description}}</p>
                         </div>
                         <ul class="list-group list-group-flush">
                           <li class="list-group-item">{{i.price}}</li>
-                          <li class="list-group-item">{{i.sellername}}</li>
-                          <li class="list-group-item">{{i.quantity}}</li>
+                          <li class="list-group-item">{{i.category}}</li>
+                          <li class="list-group-item">{{i.rating}}</li>
                         </ul>
                         <div class="card-body">
                           <a href="#" class="button  btn btn-primary">Buy</a>
