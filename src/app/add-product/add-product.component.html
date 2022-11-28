@@ -7,30 +7,30 @@
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">Product Image</label>
-                    <input type="file" name="" id="" class="form-control">
+                    <input name="image" [(ngModel)]="image" type="file" name="" id="" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">Product Title</label>
-                    <input type="text" class="form-control">
+                    <input name="title" [(ngModel)]="title" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">Description</label>
-                    <input type="text" class="form-control">
+                    <textarea name="description" [(ngModel)]="description" name="" id="" cols="30" rows="3" class="form-control"></textarea>
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                    <label for="" class="form-label">Rate</label>
-                    <input type="text" class="form-control">
+                    <label for="" class="form-label">Price</label>
+                    <input name="price" [(ngModel)]="price" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                    <label for="" class="form-label">Seller</label>
-                    <input type="text" class="form-control">
+                    <label for="" class="form-label">Rating</label>
+                    <input name="rating" [(ngModel)]="rating" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                    <label for="" class="form-label">Quantity</label>
-                    <input type="number" name="" id="" class="form-control">
+                    <label for="" class="form-label">Category</label>
+                    <input name="category" [(ngModel)]="category" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
-                    <button class="btn btn-success">Submit</button>
+                    <button (click)="readValues()" class="btn btn-success">Submit</button>
                 </div>
             </div>
         </div>
